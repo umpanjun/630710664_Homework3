@@ -2,7 +2,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class ApiService {
-  static const String baseUrl = 'http://192.168.1.8:8001/products';
+  static const String baseUrl = 'http://192.168.1.8:8001/products'; //ต้องเป็น ip เดียวกันกับคอมพิวเตอร์ถึงเทสได้
 
   Future<List<dynamic>> fetchProducts() async {
     final response = await http.get(Uri.parse(baseUrl));
